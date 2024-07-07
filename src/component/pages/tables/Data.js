@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom'
 
 function Data() {
     return (
-        <div class="content-wrapper">
+        <div className="content-wrapper">
             {/* <!-- Content Header (Page header) --> */}
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
+            <section className="content-header">
+                <div className="container-fluid">
+                    <div className="row mb-2">
+                        <div className="col-sm-6">
                             <h1>DataTables</h1>
                         </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><Link to={{}}>Home</Link></li>
-                                <li class="breadcrumb-item active">DataTables</li>
+                        <div className="col-sm-6">
+                            <ol className="breadcrumb float-sm-right">
+                                <li className="breadcrumb-item"><Link to='#'>Home</Link></li>
+                                <li className="breadcrumb-item active">DataTables</li>
                             </ol>
                         </div>
                     </div>
@@ -23,17 +23,17 @@ function Data() {
             </section>
 
             {/* <!-- Main content --> */}
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">DataTable with minimal features & hover style</h3>
+            <section className="content">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="card">
+                                <div className="card-header">
+                                    <h3 className="card-title">DataTable with minimal features & hover style</h3>
                                 </div>
                                 {/* <!-- /.card-header --> */}
-                                <div class="card-body">
-                                    <table id="example2" class="table table-bordered table-hover">
+                                <div className="card-body">
+                                    <table id="example2" className="table table-bordered table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Rendering engine</th>
@@ -467,13 +467,13 @@ function Data() {
                             </div>
                             {/* <!-- /.card --> */}
 
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">DataTable with default features</h3>
+                            <div className="card">
+                                <div className="card-header">
+                                    <h3 className="card-title">DataTable with default features</h3>
                                 </div>
                                 {/* <!-- /.card-header --> */}
-                                <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">
+                                <div className="card-body">
+                                    <table id="example1" className="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>Rendering engine</th>

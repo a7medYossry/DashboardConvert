@@ -1,5 +1,3 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
 import Blank from './examples/Blank'
 import Contacts from './examples/Contacts'
 import ContactUs from './examples/ContactUs'
@@ -19,32 +17,26 @@ import ProjectDetail from './examples/ProjectDetail'
 import ProjectEdit from './examples/ProjectEdit'
 import Projects from './examples/Projects'
 
-function Examples() {
-    return (
-        <>
-        <Routes>
-            <Route path={'pages/examples/blank'} element={<Blank />} />
-            <Route path={'pages/examples/contacts'} element={<Contacts />} />
-            <Route path={'pages/examples/contacts'} element={<Contacts />} />
-            <Route path={'pages/examples/contactUs'} element={<ContactUs />} />
-            <Route path={'pages/examples/eCommerce'} element={<ECommerce />} />
-            <Route path={'pages/examples/404'} element={<Error404 />} />
-            <Route path={'pages/examples/500'} element={<Error500 />} />
-            <Route path={'pages/examples/faq'} element={<Faq />} />
-            <Route path={'pages/examples/invoice'} element={<Invoice/>} />
-            <Route path={'pages/examples/invoicePrint'} element={<InvoicePrint/>} />
-            <Route path={'pages/examples/language-menu'} element={<LanguageMenu/>} />
-            <Route path={'pages/examples/legacy-user-menu'} element={<LegacyUserMenu/>} />
-            <Route path={'pages/examples/lockscreen'} element={<LockScreen/>} />
-            <Route path={'pages/examples/pace'} element={<Pace/>} />
-            <Route path={'pages/examples/profile'} element={<Profile/>} />
-            <Route path={'pages/examples/project-add'} element={<ProjectAdd/>} />
-            <Route path={'pages/examples/project-detail'} element={<ProjectDetail/>} />
-            <Route path={'pages/examples/project-edit'} element={<ProjectEdit/>} />
-            <Route path={'pages/examples/projects'} element={<Projects/>} />
-            </Routes>
-        </>
-    )
-}
+const Examples = 
+    [
+        { path: 'blank', element: <Blank /> },
+        { path: 'legacy-user-menu', element: <LegacyUserMenu /> },
+        { path: 'contacts', element: < Contacts />},
+        { path: 'contactUs', element: <ContactUs />},
+        { path: 'eCommerce', element: <ECommerce />},
+        { path: '404', element: <Error404 />},
+        { path: '500', element: <Error500 />},
+        { path: 'faq', element: <Faq />},
+        { path: 'invoice', element: <Invoice />},
+        { path: 'invoicePrint', element: <InvoicePrint />},
+        { path: 'language-menu', element: <LanguageMenu />},
+        { path: 'lockscreen', element: <LockScreen />},
+        { path: 'pace', element: <Pace />},
+        { path: 'profile', element: <Profile />},
+        { path: 'project-add', element: <ProjectAdd />},
+        { path: 'project-detail', element: <ProjectDetail />},
+        { path: 'project-edit', element: <ProjectEdit />},
+        { path: 'projects', element: <Projects />},
+    ]
 
 export default Examples

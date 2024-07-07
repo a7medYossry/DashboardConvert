@@ -3,6 +3,19 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
+export const options = {
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: false,
+            text: 'Chart.js Line Chart',
+        },
+        lineElement: true
+    },
+};
 
 export const data = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -31,9 +44,9 @@ export const data = {
     ],
 };
 function DonutChart() {
-    return (<div style={{maxHeight:'250px',display:'flex',justifyContent:'space-around',alignItems:'center'}}>
-        <Doughnut data={data}  />
-    </div>
+    return (<>
+        <Doughnut data={data}  options={options}  />
+    </>
     )
 }
 

@@ -73,7 +73,7 @@ function ProjectDetail() {
                   <h4>Recent Activity</h4>
                     <div className="post">
                       <div className="user-block">
-                        <img className="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image"/>
+                        <img className="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user"/>
                         <span className="username">
                           <Link to={{}}>Jonathan Burke Jr.</Link>
                         </span>
@@ -93,7 +93,7 @@ function ProjectDetail() {
 
                     <div className="post clearfix">
                       <div className="user-block">
-                        <img className="img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User Image"/>
+                        <img className="img-circle img-bordered-sm" src="../../dist/img/user7-128x128.jpg" alt="User"/>
                         <span className="username">
                           <Link to={{}}>Sarah Ross</Link>
                         </span>
@@ -112,7 +112,7 @@ function ProjectDetail() {
 
                     <div className="post">
                       <div className="user-block">
-                        <img className="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image"/>
+                        <img className="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user"/>
                         <span className="username">
                           <Link to={{}}>Jonathan Burke Jr.</Link>
                         </span>

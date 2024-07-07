@@ -20,13 +20,13 @@ ChartJS.register(
 );
 
 export const options = {
+    maintainAspectRatio:false,
     plugins: {
         title: {
             display: true,
             text: 'Chart.js Bar Chart - Stacked',
         },
     },
-    responsive: true,
     scales: {
         x: {
             stacked: true,

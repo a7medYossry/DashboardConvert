@@ -1,7 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LineChartFlot from '../../UI/charts/Flot/LineChartFlot'
+import BarChart from '../../UI/charts/chartjs/BarChart'
+import { useDispatch } from 'react-redux'
+import { setSidebarMini } from '../../redux/actions/bodyActions'
+import { useEffect } from 'react'
 
 function Index3() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        return () => {
+            dispatch(setSidebarMini(false))
+        }
+    }
+        , [])
+
     return (
         <div className="content-wrapper">
             {/* <!-- Content Header (Page header) --> */}
@@ -54,17 +67,7 @@ function Index3() {
                                     {/* <!-- /.d-flex --> */}
 
                                     <div className="position-relative mb-4">
-                                        <canvas id="visitors-chart" height="200"></canvas>
-                                    </div>
-
-                                    <div className="d-flex flex-row justify-content-end">
-                                        <span className="mr-2">
-                                            <i className="fas fa-square text-primary"></i> This Week
-                                        </span>
-
-                                        <span>
-                                            <i className="fas fa-square text-gray"></i> Last Week
-                                        </span>
+                                        <LineChartFlot backgroundColor={['#007bff', '#6c757d']} color={['#007bff', '#6c757d']} datalabels={['This Week', 'Last Week']} />
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +98,8 @@ function Index3() {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2"/>
-                                                        Some Product
+                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2" />
+                                                    Some Product
                                                 </td>
                                                 <td>$13 USD</td>
                                                 <td>
@@ -114,8 +117,8 @@ function Index3() {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2"/>
-                                                        Another Product
+                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2" />
+                                                    Another Product
                                                 </td>
                                                 <td>$29 USD</td>
                                                 <td>
@@ -133,8 +136,8 @@ function Index3() {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2"/>
-                                                        Amazing Product
+                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2" />
+                                                    Amazing Product
                                                 </td>
                                                 <td>$1,230 USD</td>
                                                 <td>
@@ -152,9 +155,9 @@ function Index3() {
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2"/>
-                                                        Perfect Item
-                                                        <span className="badge bg-danger">NEW</span>
+                                                    <img src="dist/img/default-150x150.png" alt="Product 1" className="img-circle img-size-32 mr-2" />
+                                                    Perfect Item
+                                                    <span className="badge bg-danger">NEW</span>
                                                 </td>
                                                 <td>$199 USD</td>
                                                 <td>
@@ -201,18 +204,9 @@ function Index3() {
                                     {/* <!-- /.d-flex --> */}
 
                                     <div className="position-relative mb-4">
-                                        <canvas id="sales-chart" height="200"></canvas>
+                                        <BarChart backgroundColor={['#007bff', '#6c757d']} dataSetLabel={['This Year', 'LastYear']} />
                                     </div>
 
-                                    <div className="d-flex flex-row justify-content-end">
-                                        <span className="mr-2">
-                                            <i className="fas fa-square text-primary"></i> This year
-                                        </span>
-
-                                        <span>
-                                            <i className="fas fa-square text-gray"></i> Last year
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
                             {/* <!-- /.card --> */}

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Line } from 'react-chartjs-2';
-import { faker } from '@faker-js/faker';
-
+import zoomPlugin from 'chartjs-plugin-zoom';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -21,10 +20,25 @@ ChartJS.register(
     Title,
     Tooltip,
     Legend,
-    Filler
+    Filler,
+    zoomPlugin
 );
-
+let delayed;
 export const options = {
+    maintainAspectRatio: false,
+    // aspectRatio:1/50,
+    animation: {
+        onComplete: () => {
+            delayed = true;
+        },
+        delay: (context) => {
+            let delay = 0;
+            if (context.type === 'data' && context.mode === 'default' && !delayed) {
+                delay = context.dataIndex * 1 + context.datasetIndex * 1;
+            }
+            return delay;
+        },
+    },
     responsive: true,
     plugins: {
         legend: {
@@ -34,80 +48,75 @@ export const options = {
             display: false,
             text: 'Chart.js Line Chart',
         },
-        maintainAspectRatio: false,
         filler: {
             propagate: true
+        },
+        zoom: {
+            pan: {
+                enabled: true,
+                mode: 'x'
+            },
+            zoom: {
+                pinch: {
+                    enabled: true       // Enable pinch zooming
+                },
+                wheel: {
+                    enabled: true       // Enable wheel zooming
+                },
+                mode: 'x',
+            }
+        }
+    },
+    scales: {
+        x: {
+            type: 'linear'
         }
     },
 };
 
 const labels = [];
 
-
-// export const data = {
-//     labels,
-//     datasets: [
-//         {
-//             fill: true,
-//             radius: 0,
-//             lineTension: 0.4,
-//             label: 'Dataset 1',
-//             data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-//             borderColor: 'rgb(255, 99, 132)',
-//             backgroundColor: 'rgb(255, 99, 132)',
-//         },
-
-//     ],
-// };
-
-
-
-function InteractiveAreaChart() {
+function InteractiveAreaChart({ active = 'active' }) {
     for (let i = 0; i < 10; i++) {
         labels[i * 5] = `${i * 10}`
-        for (let r = 0; r < 4; r++) {
+        for (let r = 0; r < 50; r++) {
             labels[i * 5 + r + 1] = ''
         }
     }
     const [data, setData] = useState({
-        labels,
+
         datasets: [
             {
                 fill: true,
                 radius: 0,
-                lineTension: 0.4,
+                lineTension: 0,
                 label: 'Dataset 1',
-                data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                borderColor: 'rgb(255, 99, 132)',
-                backgroundColor: 'rgb(255, 99, 132)',
+                data: [{ x: 0, y: 10 }],
+                borderColor: 'rgba(53, 162, 235)',
+                backgroundColor: 'rgba(53, 162, 235, 0.5)',
             },
 
         ],
     })
-    // labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })) }
-
-  
-
-    const [count, setCount] = useState(0)
+    let dataRef = useRef([])
+    let h = useRef(0)
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            const end=data.datasets[0].data.length+count
-            const x = faker.datatype.number({ min: -1000, max: 1000 })
-            setData(prevData => ({
-                ...prevData,
-                datasets: [{ ...prevData.datasets[0], data:[...data.datasets[0].data.slice(count,end),x]}],
+        if (active === 'active') {
+            const intervalId = setInterval(() => {
+                dataRef.current = [...data.datasets[0].data, { x: h.current, y: Math.random() * 2 + 10 }]
+                setData(prevData => ({
+                    ...prevData,
+                    datasets: [{ ...prevData.datasets[0], data: dataRef.current }],
 
-            }))
-            const all=data.datasets[0].data.slice(count,end)
-            console.log(all)
-            setCount(count + 1)
-            console.log(end)
-
-        }, 5000)
-        return () => {
-            clearInterval(intervalId);
+                }))
+                h.current = h.current + 1
+            }, 1000)
+            return () => {
+                clearInterval(intervalId);
+            }
         }
-    });
+
+    }, [data, active]);
 
 
     return (

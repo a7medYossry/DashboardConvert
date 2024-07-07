@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DonutChartInline from '../../UI/charts/inLine/DonutChartInline'
+import AreaChartFlot from '../../UI/charts/Flot/AreaChartFlot'
+import Card from '../../UI/card/Card'
 
 function Inline() {
     return (
@@ -29,71 +32,44 @@ function Inline() {
                     <div className="row">
                         <div className="col-12">
                             {/* <!-- jQuery Knob --> */}
-                            <div className="card">
-                                <div className="card-header">
-                                    <h3 className="card-title">
-                                        <i className="far fa-chart-bar"></i>
-                                        jQuery Knob
-                                    </h3>
-
-                                    <div className="card-tools">
-                                        <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                            <i className="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                            <i className="fas fa-times"></i>
-                                        </button>
+                            <Card name='jQuery Knob' bfName={<i className="far fa-chart-bar"></i>} >
+                                <div className="row">
+                                    <div className="col-6 col-md-3 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#3c8dbc' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">New Visitors</div>
                                     </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#f56954' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">Bounce Rate</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#932ab6' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">Server Load</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#00a65a' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">Disk Space</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
                                 </div>
-                                {/* <!-- /.card-header --> */}
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="30" data-width="90" data-height="90" data-fgColor="#3c8dbc"/>
+                                {/* <!-- /.row --> */}
 
-                                                <div className="knob-label">New Visitors</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="70" data-width="90" data-height="90" data-fgColor="#f56954"/>
-
-                                                <div className="knob-label">Bounce Rate</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="-80" data-min="-150" data-max="150" data-width="90"
-                                                data-height="90" data-fgColor="#00a65a"/>
-
-                                                <div className="knob-label">Server Load</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="40" data-width="90" data-height="90" data-fgColor="#00c0ef"/>
-
-                                                <div className="knob-label">Disk Space</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
+                                <div className="row">
+                                    <div className="col-6 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#00c0ef' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">Bandwidth</div>
                                     </div>
-                                    {/* <!-- /.row --> */}
-
-                                    <div className="row">
-                                        <div className="col-6 text-center">
-                                            <input type="text" className="knob" defaultValue="90" data-width="90" data-height="90" data-fgColor="#932ab6"/>
-
-                                                <div className="knob-label">Bandwidth</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 text-center">
-                                            <input type="text" className="knob" defaultValue="50" data-width="90" data-height="90" data-fgColor="#39CCCC"/>
-
-                                                <div className="knob-label">CPU</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 text-center justify-content-center row">
+                                        <div className='col-12 d-flex justify-content-center'><DonutChartInline color='#00c0ef' percentage={Math.trunc(Math.random() * 100)} /></div>
+                                        <div className="knob-label col">CPU</div>
                                     </div>
-                                    {/* <!-- /.row --> */}
+                                    {/* <!-- ./col --> */}
                                 </div>
-                                {/* <!-- /.card-body --> */}
-                            </div>
+                            </Card>
                             {/* <!-- /.card --> */}
                         </div>
                         {/* <!-- /.col --> */}
@@ -102,58 +78,40 @@ function Inline() {
 
                     <div className="row">
                         <div className="col-12">
-                            <div className="card">
-                                <div className="card-header">
-                                    <h3 className="card-title">
-                                        <i className="far fa-chart-bar"></i>
-                                        jQuery Knob Different Sizes
-                                    </h3>
-
-                                    <div className="card-tools">
-                                        <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                            <i className="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                            <i className="fas fa-times"></i>
-                                        </button>
+                            <Card name='jQuery Knob Different Sizes' bfName={<i className="far fa-chart-bar"></i>}>
+                                <div className="row">
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#3c8dbc' percentage={Math.trunc(Math.random() * 100)} />
+                                        </div>
+                                        <div className="knob-label">data-width="90"</div>
                                     </div>
-                                </div>
-                                {/* <!-- /.card-header --> */}
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="30" data-width="90" data-height="90" data-fgColor="#3c8dbc"
-                                                data-readonly="true"/>
-
-                                                <div className="knob-label">data-width="90"</div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#f56954' maxHeight='150px' maxWidth='150px' cutout={50} percentage={Math.trunc(Math.random() * 100)} />
                                         </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="30" data-width="120" data-height="120"
-                                                data-fgColor="#f56954"/>
-
-                                                <div className="knob-label">data-width="120"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="30" data-thickness="0.1" data-width="90" data-height="90"
-                                                data-fgColor="#00a65a"/>
-
-                                                <div className="knob-label">data-thickness="0.1"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125"
-                                                defaultValue="30" data-width="120" data-height="120" data-fgColor="#00c0ef"/>
-
-                                                <div className="knob-label">data-angleArc="250"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
+                                        <div className="knob-label">data-width="120"</div>
                                     </div>
-                                    {/* <!-- /.row --> */}
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#932ab6' cutout={40} percentage={Math.trunc(Math.random() * 100)} />
+                                        </div>
+
+                                        <div className="knob-label">data-thickness="0.1"</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#00c0ef' circumference={360 * (1 - 1 / 3)} rotation={245} percentage={Math.trunc(Math.random() * 100)} />
+                                        </div>
+
+                                        <div className="knob-label">data-anglearc="250"</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
                                 </div>
-                                {/* <!-- /.card-body --> */}
-                            </div>
+                            </Card>
                             {/* <!-- /.card --> */}
                         </div>
                         {/* <!-- /.col --> */}
@@ -162,59 +120,40 @@ function Inline() {
 
                     <div className="row">
                         <div className="col-12">
-                            <div className="card">
-                                <div className="card-header">
-                                    <h3 className="card-title">
-                                        <i className="far fa-chart-bar"></i>
-                                        jQuery Knob Tron Style
-                                    </h3>
-
-                                    <div className="card-tools">
-                                        <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                            <i className="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                            <i className="fas fa-times"></i>
-                                        </button>
+                            <Card name='jQuery Knob Tron Style' bfName={<i className="far fa-chart-bar"></i>}>
+                                <div className="row">
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#00c0ef' borderWidth='2px' padding='2px' percentage={Math.trunc(Math.random() * 100)} />
+                                        </div>
+                                        <div className="knob-label">data-width="90"</div>
                                     </div>
-                                </div>
-                                {/* <!-- /.card-header --> */}
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="80" data-skin="tron" data-thickness="0.2" data-width="90"
-                                                data-height="90" data-fgColor="#3c8dbc" data-readonly="true"/>
-
-                                                <div className="knob-label">data-width="90"</div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#932ab6' borderWidth='2px' padding='2px' percentage={Math.trunc(Math.random() * 100)} />
                                         </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="60" data-skin="tron" data-thickness="0.2" data-width="120"
-                                                data-height="120" data-fgColor="#f56954"/>
-
-                                                <div className="knob-label">data-width="120"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="10" data-skin="tron" data-thickness="0.1" data-width="90"
-                                                data-height="90" data-fgColor="#00a65a"/>
-
-                                                <div className="knob-label">data-thickness="0.1"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-6 col-md-3 text-center">
-                                            <input type="text" className="knob" defaultValue="100" data-skin="tron" data-thickness="0.2"
-                                                data-angleArc="250" data-angleOffset="-125" data-width="120" data-height="120"
-                                                data-fgColor="#00c0ef"/>
-
-                                                <div className="knob-label">data-angleArc="250"</div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
+                                        <div className="knob-label">data-width="120"</div>
                                     </div>
-                                    {/* <!-- /.row --> */}
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center'>
+                                            <DonutChartInline color='#f56954' borderWidth='2px' padding='2px' percentage={Math.trunc(Math.random() * 100)} />
+                                        </div>
+                                        <div className="knob-label">data-thickness="0.1"</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-6 col-md-3 text-center">
+                                        <div className='col-12 d-flex justify-content-center '>
+                                            <div className='border-1 canavas-border'>
+                                                <DonutChartInline color='#3c8dbc' margins='-8px 0 0 0' rotation={245}  circumference={360 - (1 / 3) * 360} percentage={Math.trunc(Math.random() * 100)} />
+                                            </div>
+                                        </div>
+                                        <div className="knob-label">data-anglearc="250"</div>
+                                    </div>
+                                    {/* <!-- ./col --> */}
                                 </div>
-                                {/* <!-- /.card-body --> */}
-                            </div>
+                            </Card>
                             {/* <!-- /.card --> */}
                         </div>
                         {/* <!-- /.col --> */}
@@ -223,42 +162,23 @@ function Inline() {
 
                     <div className="row">
                         <div className="col-12">
-                            <div className="card">
-                                <div className="card-header">
-                                    <h3 className="card-title">
-                                        <i className="far fa-chart-bar"></i>
-                                        Sparklines
-                                    </h3>
+                            <Card name='Sparklines' bfName={<i className="far fa-chart-bar"></i>}>
+                                <div className="row">
+                                    <div className="col-4 text-center">
+                                        <AreaChartFlot tension={0} />
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-4 text-center">
+                                        <AreaChartFlot tension={0} color='#9ac5de' backgroundColor='#9ac5de96' />
+                                    </div>
+                                    {/* <!-- ./col --> */}
+                                    <div className="col-4 text-center">
+                                        <AreaChartFlot tension={0} color='#63f54f' backgroundColor='#63f54f7d' />
 
-                                    <div className="card-tools">
-                                        <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                            <i className="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                            <i className="fas fa-times"></i>
-                                        </button>
                                     </div>
+                                    {/* <!-- ./col --> */}
                                 </div>
-                                {/* <!-- /.card-header --> */}
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-4 text-center">
-                                            <div id="sparkline-1"></div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-4 text-center">
-                                            <div id="sparkline-2"></div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                        <div className="col-4 text-center">
-                                            <div id="sparkline-3"></div>
-                                        </div>
-                                        {/* <!-- ./col --> */}
-                                    </div>
-                                    {/* <!-- /.row --> */}
-                                </div>
-                                {/* <!-- /.card-body --> */}
-                            </div>
+                            </Card>
                             {/* <!-- /.card --> */}
                         </div>
                         {/* <!-- /.col --> */}

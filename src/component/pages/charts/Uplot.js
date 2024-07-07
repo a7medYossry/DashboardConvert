@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LineChartFlot from '../../UI/charts/Flot/LineChartFlot'
+import Card from '../../UI/card/Card'
 
 function Uplot() {
     return (
@@ -13,7 +15,7 @@ function Uplot() {
                         </div>
                         <div className="col-sm-6">
                             <ol className="breadcrumb float-sm-right">
-                                <li className="breadcrumb-item"><Link to={{}}>Home</Link></li>
+                                <li className="breadcrumb-item"><Link to='#'>Home</Link></li>
                                 <li className="breadcrumb-item active">ChartJS</li>
                             </ol>
                         </div>
@@ -26,49 +28,19 @@ function Uplot() {
             <section className="content">
                 <div className="container-fluid">
                     {/* <!-- AREA CHART --> */}
-                    <div className="card card-primary">
-                        <div className="card-header">
-                            <h3 className="card-title">Area Chart</h3>
-
-                            <div className="card-tools">
-                                <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                    <i className="fas fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                    <i className="fas fa-times"></i>
-                                </button>
-                            </div>
+                    <Card name='Area Chart' color='card-primary'  >
+                        <div className="chart">
+                            <LineChartFlot tension={0} fill={true} color={['#cbcfd8', '#4e98c2']} backgroundColor={['#cbcfd878', '#4e98c280']} />
                         </div>
-                        <div className="card-body">
-                            <div className="chart">
-                                <div id="areaChart" style={{minHeight: '250px', height: '250px', maxHeight: '250px', maxWidth: '100%'}}></div>
-                            </div>
-                        </div>
-                        {/* <!-- /.card-body --> */}
-                    </div>
+                    </Card>
                     {/* <!-- /.card --> */}
 
                     {/* <!-- LINE CHART --> */}
-                    <div className="card card-info">
-                        <div className="card-header">
-                            <h3 className="card-title">Line Chart</h3>
-
-                            <div className="card-tools">
-                                <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                                    <i className="fas fa-minus"></i>
-                                </button>
-                                <button type="button" className="btn btn-tool" data-card-widget="remove">
-                                    <i className="fas fa-times"></i>
-                                </button>
-                            </div>
+                    <Card name='Line Chart' color='card-info'>
+                        <div className="chart">
+                            <LineChartFlot tension={0} borderWidth={4} pointRadius={[6]} color={['#cbcfd8', '#4e98c2']} backgroundColor={['white', 'white']} />
                         </div>
-                        <div className="card-body">
-                            <div className="chart">
-                                <div id="lineChart" style={{minHeight: '250px', height: '250px', maxHeight: '250px', maxWidth: '100%'}}></div>
-                            </div>
-                        </div>
-                        {/* <!-- /.card-body --> */}
-                    </div>
+                    </Card>
                     {/* <!-- /.card --> */}
                 </div>
                 {/* <!-- /.container-fluid --> */}

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Card from '../../UI/Card';
+import Card from '../../UI/card/Card';
 import BarChart from '../../UI/charts/chartjs/BarChart';
 import DonutChart from '../../UI/charts/chartjs/DonutChart';
-import LineChartFill from '../../UI/charts/chartjs/LineChartFill';
 import LineChartStacked from '../../UI/charts/chartjs/LineChartStacked';
+import LineChartFill from '../../UI/charts/chartjs/LineChartFill';
 import PieChart from '../../UI/charts/chartjs/PieChart';
 import StackedBarChart from '../../UI/charts/chartjs/StackedBarChart';
-import InteractiveAreaChart from '../../UI/charts/Flot/InteractiveAreaChart';
 
 
 const Chartjs = () => {
@@ -36,9 +35,6 @@ const Chartjs = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-6">
-                            <Card name='InteractiveAreaChart' color='card-primary'>
-                                <InteractiveAreaChart />
-                            </Card>
                             {/* <!-- AREA CHART --> */}
                             <Card name='Area Chart' color='card-primary'>
                                 <LineChartFill />
@@ -46,7 +42,9 @@ const Chartjs = () => {
                             {/* <!-- AREA CHART --> */}
                             {/* <!-- DONUT CHART --> */}
                             <Card name='Donut Chart' color='card-danger'>
-                                <DonutChart />
+                                <div style={{ minHeight: '250px', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                                    <DonutChart />
+                                </div>
                             </Card>
                             {/* <!-- DONUT CHART --> */}
                             {/* <!-- PIE CHART --> */}

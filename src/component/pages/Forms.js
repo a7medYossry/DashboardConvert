@@ -1,21 +1,17 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Advanced from './forms/Advanced'
-import Editors from './forms/Editors'
-import General from './forms/General'
+import Advanced from './forms/advanced/Advanced'
+import Editors from './forms/Editors/Editors'
+import General from './forms/general/General'
 import Validation from './forms/Validation'
 
-function Forms() {
-    return (
-        <>
-        <Routes>
-        <Route path={'pages/forms/advanced'} element={<Advanced/>} />
-        <Route path={'pages/forms/editors'} element={<Editors/>} />
-        <Route path={'pages/forms/general'} element={<General/>} />
-        <Route path={'pages/forms/validation'} element={<Validation/>} />
-        </Routes>
-        </>
-    )
-}
+
+
+const Forms = 
+    [
+        { path: 'advanced', element: <Advanced /> },
+        { path: 'editors', element: < Editors />},
+        { path: 'general', element: <General />},
+        { path: 'Validation', element: <Validation />},
+    ]
+
 
 export default Forms

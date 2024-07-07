@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Card from '../../UI/card/Card'
+import DirectChatCard from '../mainpages/index/DirectChatCard'
+import BackToTopBtn from '../UI/BackToTopBtn'
 
 function Widgets() {
   return (
@@ -13,7 +16,7 @@ function Widgets() {
             </div>
             <div className="col-sm-6">
               <ol className="breadcrumb float-sm-right">
-                <li className="breadcrumb-item"><Link to={{}}>Home</Link></li>
+                <li className="breadcrumb-item"><Link to='#'>Home</Link></li>
                 <li className="breadcrumb-item active">Widgets</li>
               </ol>
             </div>
@@ -152,7 +155,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -172,7 +175,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -192,7 +195,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -212,7 +215,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -238,7 +241,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -258,7 +261,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -278,7 +281,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -298,7 +301,7 @@ function Widgets() {
                   <span className="info-box-number">41,410</span>
 
                   <div className="progress">
-                    <div className="progress-bar" style={{width: "70%"}}></div>
+                    <div className="progress-bar" style={{ width: "70%" }}></div>
                   </div>
                   <span className="progress-description">
                     70% Increase in 30 Days
@@ -328,7 +331,7 @@ function Widgets() {
                 <div className="icon">
                   <i className="fas fa-shopping-cart"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -338,14 +341,14 @@ function Widgets() {
               {/* <!-- small card --> */}
               <div className="small-box bg-success">
                 <div className="inner">
-                  <h3>53<sup style={{fontSize: "20px"}}>%</sup></h3>
+                  <h3>53<sup style={{ fontSize: "20px" }}>%</sup></h3>
 
                   <p>Bounce Rate</p>
                 </div>
                 <div className="icon">
                   <i className="ion ion-stats-bars"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -362,7 +365,7 @@ function Widgets() {
                 <div className="icon">
                   <i className="fas fa-user-plus"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -379,7 +382,7 @@ function Widgets() {
                 <div className="icon">
                   <i className="fas fa-chart-pie"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -406,7 +409,7 @@ function Widgets() {
                 <div className="icon">
                   <i className="fas fa-shopping-cart"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -421,14 +424,14 @@ function Widgets() {
                 </div>
                 {/* <!-- end loading --> */}
                 <div className="inner">
-                  <h3>53<sup style={{fontSize: "20px"}}>%</sup></h3>
+                  <h3>53<sup style={{ fontSize: "20px" }}>%</sup></h3>
 
                   <p>Bounce Rate</p>
                 </div>
                 <div className="icon">
                   <i className="ion ion-stats-bars"></i>
                 </div>
-                <Link to={{}} className="small-box-footer">
+                <Link to='#' className="small-box-footer">
                   More info <i className="fas fa-arrow-circle-right"></i>
                 </Link>
               </div>
@@ -442,82 +445,30 @@ function Widgets() {
           <h5 className="mb-2">Abilities</h5>
           <div className="row">
             <div className="col-md-3">
-              <div className="card card-primary collapsed-card">
-                <div className="card-header">
-                  <h3 className="card-title">Expandable</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Expandable' color='card-primary' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-success">
-                <div className="card-header">
-                  <h3 className="card-title">Collapsable</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Collapsable' color='card-success' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Removable</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Removable' color='card-warning' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Maximizable</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="maximize"><i className="fas fa-expand"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Maximizable' btnstyle='d-none' btnMaxinizeStyle='show-maximize' color='card-danger'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -526,23 +477,9 @@ function Widgets() {
 
           <div className="row">
             <div className="col-md-3">
-              <div className="card card-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Card Refresh</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="card-refresh" data-source="widgets.html" data-source-selector="#card-refresh-content">
-                      <i className="fas fa-sync-alt"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Card Refresh' btnRefreshStyle='showRefresh' color='card-primary'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
               <div className="d-none" id="card-refresh-content">
                 The body of the card after card refresh
@@ -550,68 +487,23 @@ function Widgets() {
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-success">
-                <div className="card-header">
-                  <h3 className="card-title">All together</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="card-refresh" data-source="widgets.html" data-source-selector="#card-refresh-content" data-load-on-init="false">
-                      <i className="fas fa-sync-alt"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="maximize">
-                      <i className="fas fa-expand"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='All together' btnRefreshStyle='showRefresh' btnMaxinizeStyle='showMax' color='card-success'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Loading state</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-                {/* <!-- Loading (remove the following to stop the loading)--> */}
-                <div className="overlay">
-                  <i className="fas fa-2x fa-sync-alt"></i>
-                </div>
-                {/* <!-- end loading --> */}
-              </div>
+              <Card name='Loading state' refreshDisplay='show' btnstyle='d-none' color='card-warning'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Loading state (dark)</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-                {/* <!-- Loading (remove the following to stop the loading)--> */}
-                <div className="overlay dark">
-                  <i className="fas fa-2x fa-sync-alt"></i>
-                </div>
-                {/* <!-- end loading --> */}
-              </div>
+              <Card name='Loading state (dark)' btnstyle='d-none' color='card-danger' overlayColor='dark' refreshDisplay='show'>
+                The body of the card jlkjlkjkl
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -622,84 +514,30 @@ function Widgets() {
           <h5 className="mb-2">Custom Shadows Variations <small><i>Using Bootstrap's Shadow Utility</i></small></h5>
           <div className="row">
             <div className="col-md-3">
-              <div className="card card-primary shadow-none">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - None</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Shadow - None' color='card-primary shadow-none' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-success shadow-sm">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Small</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Shadow - Small' color='card-success shadow-sm' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-warning shadow">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Regular</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Shadow - Regular' color='card-warning shadow' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-danger shadow-lg">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Large</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="maximize"><i className="fas fa-expand"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Shadow - Large' color='card-danger shadow-lg' btnstyle='d-none' btnMaxinizeStyle='showMaX'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -712,77 +550,30 @@ function Widgets() {
 
           <div className="row">
             <div className="col-md-3">
-              <div className="card card-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Primary</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Primary' color='card-primary' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-success">
-                <div className="card-header">
-                  <h3 className="card-title">Success</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Success' color='card-success' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Warning</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Warning' color='card-warning' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Danger</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Danger' color='card-danger' btnstyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -791,77 +582,30 @@ function Widgets() {
 
           <div className="row">
             <div className="col-md-3">
-              <div className="card card-outline card-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Primary Outline</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Primary Outline' color='card-primary card-outline ' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-outline card-success">
-                <div className="card-header">
-                  <h3 className="card-title">Success Outline</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Success Outline' color='card-success card-outline ' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-outline card-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Warning Outline</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Warning Outline' color='card-warning card-outline ' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card card-outline card-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Danger Outline</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Danger Outline' color='card-danger card-outline ' btnstyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -870,77 +614,30 @@ function Widgets() {
 
           <div className="row">
             <div className="col-md-3">
-              <div className="card bg-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Primary</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Primary' color='bg-primary' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-success">
-                <div className="card-header">
-                  <h3 className="card-title">Success</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Success' color='bg-success' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Warning</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Warning' color='bg-warning' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Danger</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Danger' color='bg-danger' btnstyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -949,77 +646,30 @@ function Widgets() {
 
           <div className="row">
             <div className="col-md-3">
-              <div className="card bg-gradient-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Primary Gradient</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Primary Gradient' color='bg-gradient-primary' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-gradient-success">
-                <div className="card-header">
-                  <h3 className="card-title">Success Gradient</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Success Gradient' color='bg-gradient-success' btnCollapseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-gradient-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Warning Gradient</h3>
-
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Warning Gradient' color='bg-gradient-warning' btnCloseStyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-3">
-              <div className="card bg-gradient-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Danger Gradient</h3>
-                </div>
-                <div className="card-body">
-                  The body of the card
-                </div>
-                {/* <!-- /.card-body --> */}
-              </div>
+              <Card name='Danger Gradient' color='bg-gradient-danger' btnstyle='d-none'>
+                The body of the card
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -1033,388 +683,28 @@ function Widgets() {
           <div className="row">
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT PRIMARY --> */}
-              <div className="card card-primary card-outline direct-chat direct-chat-primary">
-                <div className="card-header">
-                  <h3 className="card-title">Direct Chat</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-primary">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-primary">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard color='direct-chat-primary card-primary card-outline' badgeColor='bg-primary' btnSendColor='bg-primary' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT SUCCESS --> */}
-              <div className="card card-success card-outline direct-chat direct-chat-success">
-                <div className="card-header">
-                  <h3 className="card-title">Direct Chat</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-success">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-success">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard color='direct-chat-success card-success card-outline' badgeColor='bg-success' btnSendColor='bg-success' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT WARNING --> */}
-              <div className="card card-warning direct-chat direct-chat-warning">
-                <div className="card-header">
-                  <h3 className="card-title">Direct Chat</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-danger">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-warning">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard color='direct-chat-warning card-warning ' badgeColor='bg-danger' btnSendColor='bg-warning' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT DANGER --> */}
-              <div className="card card-danger direct-chat direct-chat-danger">
-                <div className="card-header">
-                  <h3 className="card-title">Direct Chat</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-danger">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard color='direct-chat-danger card-danger ' badgeColor='bg-danger' btnSendColor='bg-danger' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -1426,388 +716,28 @@ function Widgets() {
           <div className="row">
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT PRIMARY --> */}
-              <div className="card card-primary card-outline direct-chat direct-chat-primary shadow-none">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - None</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-primary">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-primary">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard name='Shadow - None' color=' card-primary card-outline  direct-chat-primary shadow-none' badgeColor='bg-primary' btnSendColor='bg-primary' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT SUCCESS --> */}
-              <div className="card card-success card-outline direct-chat direct-chat-success shadow-sm">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Small</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-success">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-success">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard name='Shadow - Small' color=' card-success card-outline  direct-chat-success shadow-sm' badgeColor='bg-success' btnSendColor='bg-success' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT WARNING --> */}
-              <div className="card card-warning direct-chat direct-chat-warning shadow">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Regular</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge bg-danger">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-warning">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard name='Shadow - Regular' color=' card-warning  direct-chat-warning shadow' badgeColor='bg-danger' btnSendColor='bg-warning' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
 
             <div className="col-md-3">
               {/* <!-- DIRECT CHAT DANGER --> */}
-              <div className="card card-danger direct-chat direct-chat-danger shadow-lg">
-                <div className="card-header">
-                  <h3 className="card-title">Shadow - Large</h3>
-
-                  <div className="card-tools">
-                    <span title="3 New Messages" className="badge">3</span>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                      <i className="fas fa-comments"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- Conversations are loaded here --> */}
-                  <div className="direct-chat-messages">
-                    {/* <!-- Message. Default to the left --> */}
-                    <div className="direct-chat-msg">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-left">Alexander Pierce</span>
-                        <span className="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-
-                    {/* <!-- Message to the right --> */}
-                    <div className="direct-chat-msg right">
-                      <div className="direct-chat-infos clearfix">
-                        <span className="direct-chat-name float-right">Sarah Bullock</span>
-                        <span className="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                      </div>
-                      {/* <!-- /.direct-chat-infos --> */}
-                      <img className="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User "/>
-                        {/* <!-- /.direct-chat-img --> */}
-                        <div className="direct-chat-text">
-                          You better believe it!
-                        </div>
-                        {/* <!-- /.direct-chat-text --> */}
-                    </div>
-                    {/* <!-- /.direct-chat-msg --> */}
-                  </div>
-                  {/* <!--/.direct-chat-messages--> */}
-
-                  {/* <!-- Contacts are loaded here --> */}
-                  <div className="direct-chat-contacts">
-                    <ul className="contacts-list">
-                      <li>
-                        <Link to={{}}>
-                          <img className="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
-
-                            <div className="contacts-list-info">
-                              <span className="contacts-list-name">
-                                Count Dracula
-                                <small className="contacts-list-date float-right">2/28/2015</small>
-                              </span>
-                              <span className="contacts-list-msg">How have you been? I was...</span>
-                            </div>
-                            {/* <!-- /.contacts-list-info --> */}
-                        </Link>
-                      </li>
-                      {/* <!-- End Contact Item --> */}
-                    </ul>
-                    {/* <!-- /.contatcts-list --> */}
-                  </div>
-                  {/* <!-- /.direct-chat-pane --> */}
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <div className="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." className="form-control"/>
-                        <span className="input-group-append">
-                          <button type="submit" className="btn btn-danger">Send</button>
-                        </span>
-                    </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer--> */}
-              </div>
+              <DirectChatCard name='Shadow - Large' color=' card-danger  direct-chat-danger shadow-lg' badgeColor='bg-danger' btnSendColor='bg-danger' />
               {/* <!--/.direct-chat --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -1823,7 +753,7 @@ function Widgets() {
                 {/* <!-- Add the bg color to the header using any of the bg-* classes --> */}
                 <div className="widget-user-header bg-warning">
                   <div className="widget-user-image">
-                    <img className="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar"/>
+                    <img className="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar" />
                   </div>
                   {/* <!-- /.widget-user-image --> */}
                   <h3 className="widget-user-username">Nadia Carmichael</h3>
@@ -1832,22 +762,22 @@ function Widgets() {
                 <div className="card-footer p-0">
                   <ul className="nav flex-column">
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Projects <span className="float-right badge bg-primary">31</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Tasks <span className="float-right badge bg-info">5</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Completed Projects <span className="float-right badge bg-success">12</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Followers <span className="float-right badge bg-danger">842</span>
                       </Link>
                     </li>
@@ -1866,7 +796,7 @@ function Widgets() {
                   <h5 className="widget-user-desc">Founder & CEO</h5>
                 </div>
                 <div className="widget-user-image">
-                  <img className="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
+                  <img className="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar" />
                 </div>
                 <div className="card-footer">
                   <div className="row">
@@ -1906,12 +836,12 @@ function Widgets() {
               <div className="card card-widget widget-user">
                 {/* <!-- Add the bg color to the header using any of the bg-* classes --> */}
                 <div className="widget-user-header text-white"
-                  style={{background: "url('../dist/img/photo1.png') center center"}}>
+                  style={{ background: "url('../dist/img/photo1.png') center center" }}>
                   <h3 className="widget-user-username text-right">Elizabeth Pierce</h3>
                   <h5 className="widget-user-desc text-right">Web Designer</h5>
                 </div>
                 <div className="widget-user-image">
-                  <img className="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar"/>
+                  <img className="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar" />
                 </div>
                 <div className="card-footer">
                   <div className="row">
@@ -1952,41 +882,22 @@ function Widgets() {
           <div className="row">
             <div className="col-md-6">
               {/* <!-- Box Comment --> */}
-              <div className="card card-widget">
-                <div className="card-header">
+              <Card bfName={
+                <>
                   <div className="user-block">
-                    <img className="img-circle" src="../dist/img/user1-128x128.jpg" alt="User "/>
-                      <span className="username"><Link to={{}}>Jonathan Burke Jr.</Link></span>
-                      <span className="description">Shared publicly - 7:30 PM Today</span>
+                    <img className="img-circle" src="../dist/img/user1-128x128.jpg" alt="User " />
+                    <span className="username"><Link to='#'>Jonathan Burke Jr.</Link></span>
+                    <span className="description">Shared publicly - 7:30 PM Today</span>
                   </div>
-                  {/* <!-- /.user-block --> */}
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" title="Mark as read">
-                      <i className="far fa-circle"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  <img className="img-fluid pad" src="../dist/img/photo2.png" alt="noname"/>
-
-                    <p>I took this photo this morning. What do you guys think?</p>
-                    <button type="button" className="btn btn-default btn-sm"><i className="fas fa-share"></i> Share</button>
-                    <button type="button" className="btn btn-default btn-sm"><i className="far fa-thumbs-up"></i> Like</button>
-                    <span className="float-right text-muted">127 likes - 3 comments</span>
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer card-comments">
-                  <div className="card-comment">
-                    {/* <!-- User image --> */}
-                    <img className="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User "/>
+                </>}
+                befMinus={<button type="button" className="btn btn-tool" title="Mark as read">
+                  <i className="far fa-circle"></i>
+                </button>}
+                footerOutBody={<>
+                  <div className="card-footer card-comments">
+                    <div className="card-comment">
+                      {/* <!-- User image --> */}
+                      <img className="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User " />
 
                       <div className="comment-text">
                         <span className="username">
@@ -1998,11 +909,11 @@ function Widgets() {
                         by the readable content of a page when looking at its layout.
                       </div>
                       {/* <!-- /.comment-text --> */}
-                  </div>
-                  {/* <!-- /.card-comment --> */}
-                  <div className="card-comment">
-                    {/* <!-- User image --> */}
-                    <img className="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User "/>
+                    </div>
+                    {/* <!-- /.card-comment --> */}
+                    <div className="card-comment">
+                      {/* <!-- User image --> */}
+                      <img className="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User " />
 
                       <div className="comment-text">
                         <span className="username">
@@ -2014,87 +925,48 @@ function Widgets() {
                         by the readable content of a page when looking at its layout.
                       </div>
                       {/* <!-- /.comment-text --> */}
+                    </div>
+                    {/* <!-- /.card-comment --> */}
                   </div>
-                  {/* <!-- /.card-comment --> */}
-                </div>
-                {/* <!-- /.card-footer --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <img className="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text"/>
+                  {/* <!-- /.card-footer --> */}
+                  <div className="card-footer">
+                    <form action='#' method="post">
+                      <img className="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text" />
                       {/* <!-- .img-push is used to add margin to elements next to floating images --> */}
                       <div className="img-push">
-                        <input type="text" className="form-control form-control-sm" placeholder="Press enter to post comment"/>
+                        <input type="text" className="form-control form-control-sm" placeholder="Press enter to post comment" />
                       </div>
-                  </form>
-                </div>
-                {/* <!-- /.card-footer --> */}
-              </div>
+                    </form>
+                  </div>
+                </>}>
+                <img className="img-fluid pad" src="../dist/img/photo2.png" alt="noname" />
+
+                <p>I took this photo this morning. What do you guys think?</p>
+                <button type="button" className="btn btn-default btn-sm"><i className="fas fa-share"></i> Share</button>
+                <button type="button" className="btn btn-default btn-sm"><i className="far fa-thumbs-up"></i> Like</button>
+                <span className="float-right text-muted">127 likes - 3 comments</span>
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
             <div className="col-md-6">
               {/* <!-- Box Comment --> */}
-              <div className="card card-widget">
-                <div className="card-header">
+              <Card bfName={
+                <>
                   <div className="user-block">
-                    <img className="img-circle" src="../dist/img/user1-128x128.jpg" alt="User "/>
-                      <span className="username"><Link to={{}}>Jonathan Burke Jr.</Link></span>
-                      <span className="description">Shared publicly - 7:30 PM Today</span>
+                    <img className="img-circle" src="../dist/img/user1-128x128.jpg" alt="User " />
+                    <span className="username"><Link to='#'>Jonathan Burke Jr.</Link></span>
+                    <span className="description">Shared publicly - 7:30 PM Today</span>
                   </div>
-                  {/* <!-- /.user-block --> */}
-                  <div className="card-tools">
-                    <button type="button" className="btn btn-tool" title="Mark as read">
-                      <i className="far fa-circle"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse">
-                      <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="remove">
-                      <i className="fas fa-times"></i>
-                    </button>
-                  </div>
-                  {/* <!-- /.card-tools --> */}
-                </div>
-                {/* <!-- /.card-header --> */}
-                <div className="card-body">
-                  {/* <!-- post text --> */}
-                  <p>Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at</p>
-
-                  <p>the coast of the Semantics, a large language ocean.
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into
-                    your mouth.</p>
-
-                  {/* <!-- Attachment --> */}
-                  <div className="attachment-block clearfix">
-                    <img className="attachment-img" src="../dist/img/photo1.png" alt="Attachment "/>
-
-                      <div className="attachment-pushed">
-                        <h4 className="attachment-heading"><Link to="https://www.lipsum.com/">Lorem ipsum text generator</Link></h4>
-
-                        <div className="attachment-text">
-                          Description about the attachment can be placed here.
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry... <Link to={{}}>more</Link>
-                        </div>
-                        {/* <!-- /.attachment-text --> */}
-                      </div>
-                      {/* <!-- /.attachment-pushed --> */}
-                  </div>
-                  {/* <!-- /.attachment-block --> */}
-
-                  {/* <!-- Social sharing buttons --> */}
-                  <button type="button" className="btn btn-default btn-sm"><i className="fas fa-share"></i> Share</button>
-                  <button type="button" className="btn btn-default btn-sm"><i className="far fa-thumbs-up"></i> Like</button>
-                  <span className="float-right text-muted">45 likes - 2 comments</span>
-                </div>
-                {/* <!-- /.card-body --> */}
-                <div className="card-footer card-comments">
-                  <div className="card-comment">
-                    {/* <!-- User image --> */}
-                    <img className="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User "/>
+                </>}
+                befMinus={<button type="button" className="btn btn-tool" title="Mark as read">
+                  <i className="far fa-circle"></i>
+                </button>}
+                footerOutBody={<>
+                  <div className="card-footer card-comments">
+                    <div className="card-comment">
+                      {/* <!-- User image --> */}
+                      <img className="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User " />
 
                       <div className="comment-text">
                         <span className="username">
@@ -2106,38 +978,69 @@ function Widgets() {
                         by the readable content of a page when looking at its layout.
                       </div>
                       {/* <!-- /.comment-text --> */}
-                  </div>
-                  {/* <!-- /.card-comment --> */}
-                  <div className="card-comment">
-                    {/* <!-- User image --> */}
-                    <img className="img-circle img-sm" src="../dist/img/user5-128x128.jpg" alt="User "/>
+                    </div>
+                    {/* <!-- /.card-comment --> */}
+                    <div className="card-comment">
+                      {/* <!-- User image --> */}
+                      <img className="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User " />
 
                       <div className="comment-text">
                         <span className="username">
-                          Nora Havisham
+                          Luna Stark
                           <span className="text-muted float-right">8:03 PM Today</span>
                         </span>
                         {/* <!-- /.username --> */}
-                        The point of using Lorem Ipsum is that it hrs a morer-less
-                        normal distribution of letters, as opposed to using
-                        'Content here, content here', making it look like readable English.
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
                       </div>
                       {/* <!-- /.comment-text --> */}
+                    </div>
+                    {/* <!-- /.card-comment --> */}
                   </div>
-                  {/* <!-- /.card-comment --> */}
-                </div>
-                {/* <!-- /.card-footer --> */}
-                <div className="card-footer">
-                  <form action={{}} method="post">
-                    <img className="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text"/>
+                  {/* <!-- /.card-footer --> */}
+                  <div className="card-footer">
+                    <form action='#' method="post">
+                      <img className="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text" />
                       {/* <!-- .img-push is used to add margin to elements next to floating images --> */}
                       <div className="img-push">
-                        <input type="text" className="form-control form-control-sm" placeholder="Press enter to post comment"/>
+                        <input type="text" className="form-control form-control-sm" placeholder="Press enter to post comment" />
                       </div>
-                  </form>
+                    </form>
+                  </div>
+                </>}>
+                {/* <!-- post text --> */}
+                <p>Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind
+                  texts. Separated they live in Bookmarksgrove right at</p>
+
+                <p>the coast of the Semantics, a large language ocean.
+                  A small river named Duden flows by their place and supplies
+                  it with the necessary regelialia. It is a paradisematic
+                  country, in which roasted parts of sentences fly into
+                  your mouth.</p>
+
+                {/* <!-- Attachment --> */}
+                <div className="attachment-block clearfix">
+                  <img className="attachment-img" src="../dist/img/photo1.png" alt="Attachment " />
+
+                  <div className="attachment-pushed">
+                    <h4 className="attachment-heading"><Link to="https://www.lipsum.com/">Lorem ipsum text generator</Link></h4>
+
+                    <div className="attachment-text">
+                      Description about the attachment can be placed here.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry... <Link to='#'>more</Link>
+                    </div>
+                    {/* <!-- /.attachment-text --> */}
+                  </div>
+                  {/* <!-- /.attachment-pushed --> */}
                 </div>
-                {/* <!-- /.card-footer --> */}
-              </div>
+                {/* <!-- /.attachment-block --> */}
+
+                {/* <!-- Social sharing buttons --> */}
+                <button type="button" className="btn btn-default btn-sm"><i className="fas fa-share"></i> Share</button>
+                <button type="button" className="btn btn-default btn-sm"><i className="far fa-thumbs-up"></i> Like</button>
+                <span className="float-right text-muted">45 likes - 2 comments</span>
+              </Card>
               {/* <!-- /.card --> */}
             </div>
             {/* <!-- /.col --> */}
@@ -2153,7 +1056,7 @@ function Widgets() {
                 {/* <!-- Add the bg color to the header using any of the bg-* classes --> */}
                 <div className="widget-user-header bg-warning">
                   <div className="widget-user-image">
-                    <img className="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar"/>
+                    <img className="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar" />
                   </div>
                   {/* <!-- /.widget-user-image --> */}
                   <h3 className="widget-user-username">Nadia Carmichael</h3>
@@ -2162,22 +1065,22 @@ function Widgets() {
                 <div className="card-footer p-0">
                   <ul className="nav flex-column">
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Projects <span className="float-right badge bg-primary">31</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Tasks <span className="float-right badge bg-info">5</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Completed Projects <span className="float-right badge bg-success">12</span>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to={{}} className="nav-link">
+                      <Link to='#' className="nav-link">
                         Followers <span className="float-right badge bg-danger">842</span>
                       </Link>
                     </li>
@@ -2196,7 +1099,7 @@ function Widgets() {
                   <h5 className="widget-user-desc">Founder & CEO</h5>
                 </div>
                 <div className="widget-user-image">
-                  <img className="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar"/>
+                  <img className="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar" />
                 </div>
                 <div className="card-footer">
                   <div className="row">
@@ -2236,12 +1139,12 @@ function Widgets() {
               <div className="card card-widget widget-user shadow-lg">
                 {/* <!-- Add the bg color to the header using any of the bg-* classes --> */}
                 <div className="widget-user-header text-white"
-                  style={{background: "url('../dist/img/photo1.png') center center"}}>
+                  style={{ background: "url('../dist/img/photo1.png') center center" }}>
                   <h3 className="widget-user-username text-right">Elizabeth Pierce</h3>
                   <h5 className="widget-user-desc text-right">Web Designer</h5>
                 </div>
                 <div className="widget-user-image">
-                  <img className="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar"/>
+                  <img className="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar" />
                 </div>
                 <div className="card-footer">
                   <div className="row">
@@ -2285,54 +1188,51 @@ function Widgets() {
               <div className="row">
                 <div className="col-md-12 col-lg-6 col-xl-4">
                   <div className="card mb-2 bg-gradient-dark">
-                    <img className="card-img-top" src="../dist/img/photo1.png" alt="Dist  1"/>
-                      <div className="card-img-overlay d-flex flex-column justify-content-end">
-                        <h5 className="card-title text-primary text-white">Card Title</h5>
-                        <p className="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
-                        <Link to={{}} className="text-white">Last update 2 mins ago</Link>
-                      </div>
+                    <img className="card-img-top" src="../dist/img/photo1.png" alt="Dist  1" />
+                    <div className="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 className="card-title text-primary text-white">Card Title</h5>
+                      <p className="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                      <Link to='#' className="text-white">Last update 2 mins ago</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-12 col-lg-6 col-xl-4">
                   <div className="card mb-2">
-                    <img className="card-img-top" src="../dist/img/photo2.png" alt="Dist  2"/>
-                      <div className="card-img-overlay d-flex flex-column justify-content-center">
-                        <h5 className="card-title text-white mt-5 pt-2">Card Title</h5>
-                        <p className="card-text pb-2 pt-1 text-white">
-                          Lorem ipsum dolor sit amet, <br/>
-                            consectetur adipisicing elit <br/>
-                              sed do eiusmod tempor.
-                            </p>
-                            <Link to={{}} className="text-white">Last update 15 hours ago</Link>
-                          </div>
-                      </div>
+                    <img className="card-img-top" src="../dist/img/photo2.png" alt="Dist  2" />
+                    <div className="card-img-overlay d-flex flex-column justify-content-center">
+                      <h5 className="card-title text-white mt-5 pt-2">Card Title</h5>
+                      <p className="card-text pb-2 pt-1 text-white">
+                        Lorem ipsum dolor sit amet, <br />
+                        consectetur adipisicing elit <br />
+                        sed do eiusmod tempor.
+                      </p>
+                      <Link to='#' className="text-white">Last update 15 hours ago</Link>
+                    </div>
                   </div>
-                  <div className="col-md-12 col-lg-6 col-xl-4">
-                    <div className="card mb-2">
-                      <img className="card-img-top" src="../dist/img/photo3.jpg" alt="Dist  3"/>
-                        <div className="card-img-overlay">
-                          <h5 className="card-title text-primary">Card Title</h5>
-                          <p className="card-text pb-1 pt-1 text-white">
-                            Lorem ipsum dolor <br/>
-                              sit amet, consectetur <br/>
-                                adipisicing elit sed <br/>
-                                  do eiusmod tempor. </p>
-                                <Link to={{}} className="text-primary">Last update 3 days ago</Link>
-                              </div>
-                            </div>
-                        </div>
+                </div>
+                <div className="col-md-12 col-lg-6 col-xl-4">
+                  <div className="card mb-2">
+                    <img className="card-img-top" src="../dist/img/photo3.jpg" alt="Dist  3" />
+                    <div className="card-img-overlay">
+                      <h5 className="card-title text-primary">Card Title</h5>
+                      <p className="card-text pb-1 pt-1 text-white">
+                        Lorem ipsum dolor <br />
+                        sit amet, consectetur <br />
+                        adipisicing elit sed <br />
+                        do eiusmod tempor. </p>
+                      <Link to='#' className="text-primary">Last update 3 days ago</Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <!-- /.container-fluid --> */}
-            </section>
-            {/* <!-- /.content --> */}
-
-            <Link id="back-to-top" to={{}} className="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
-              <i className="fas fa-chevron-up"></i>
-            </Link>
-          </div>  )
+            </div>
+          </div>
+        </div>
+        {/* <!-- /.container-fluid --> */}
+      </section>
+      {/* <!-- /.content --> */}
+      <BackToTopBtn/>
+    </div>)
 }
 
-          export default Widgets
+export default Widgets
